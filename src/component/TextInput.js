@@ -5,11 +5,11 @@ class TextInput extends Component{
     render(){
         return(
             <div>
-                <ul>
+                {/* <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#news">Text Input</a></li>
                     <li><a href="#contact">Import File</a></li>
-                </ul>
+                </ul> */}
 
                 <div className="title-text">
                     <h3>NHẬP VĂN BẢN ĐỂ DỰ ĐOÁN</h3>
