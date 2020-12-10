@@ -23,10 +23,8 @@ class FileImport extends Component{
                                 const file = new FormData();
                                 file.append('file', data.target.file.files[0]);
                                 fetch('http://localhost:5000/filejson', {
-                                    
                                     method: "POST",
                                     body: file
-                                   
                                 }).then(response => response.json()
                                     ).then(result => {
                                         console.log(result.result)
@@ -44,7 +42,9 @@ class FileImport extends Component{
                             </Form>
                             <br></br>
                            
-                            <h3 className="title-text">Kết quả: <h2>{this.state.predictResult}</h2></h3>
+                           <div className="title-result">
+                                <h3>Kết quả: <h2>{this.state.predictResult}</h2></h3>
+                           </div>
                     </div>
                 </div>
             </div>
