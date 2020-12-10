@@ -54,3 +54,8 @@ textarea{
     display: flex;
     justify-content: center;
 }
+
+.text-input-button{
+  margin-top: 30px;
+  text-align: center;
+}
