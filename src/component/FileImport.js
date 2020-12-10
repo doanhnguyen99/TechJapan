@@ -20,17 +20,13 @@ class FileImport extends Component{
                 <div className="container">
                     <div className="row text-input">
                             <Form onSubmit={(data)=>{
-                                console.log(data.target.file.files[0]);
-                                
-                                fetch('http://127.0.0.1:5000/filejson', {
+                                const file = new FormData();
+                                file.append('file', data.target.file.files[0]);
+                                fetch('http://localhost:5000/filejson', {
+                                    
                                     method: "POST",
-                                    headers: {
-                                        "Content-Type": "multipart/form-data",
-                                        "Accept": "multipart/form-data"
-                                        // "type": "formData"
-                                
-                                    },
-                                    body: {file: data.target.file.files[0]}
+                                    body: file
+                                   
                                 }).then(response => response.json()
                                     ).then(result => {
                                         console.log(result.result)
