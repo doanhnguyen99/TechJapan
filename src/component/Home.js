@@ -4,6 +4,7 @@ import './css/style.css'
 import {Route, BrowserRouter as Router, Switch, Link} from 'react-router-dom'
 import TextInput from './TextInput'
 import FileImport from './FileImport'
+import HomePage from './HomePage'
 
 class Home extends Component{
     render(){
@@ -43,6 +44,7 @@ class Home extends Component{
                     <Switch>
                         <Route path="/text-input" component={TextInput} />
                         <Route path="/file-import" component={FileImport} />
+                        <Route path="/" exact component={HomePage} />
                     </Switch>
                 </div>
             </Router>

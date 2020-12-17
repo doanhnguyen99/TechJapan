@@ -36,7 +36,7 @@ class FileImport extends Component{
                                     data.preventDefault();
                             }}>
                                 <Form.Group>
-                                    <Form.File id="exampleFormControlFile1"  name="file"  label="Chọn file...." />
+                                    <Form.File id="exampleFormControlFile1"  name="file"  label="Chọn file...." accept=".txt"/>
                                 </Form.Group>
                                     <button className="button" type="submit">Dự đoán</button>
                             </Form>
