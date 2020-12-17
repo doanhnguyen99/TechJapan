@@ -39,7 +39,7 @@ class TextInput extends Component{
       }
 
     handleSubmit = (event) => {
-        fetch('http://127.0.0.1:5000/textjson', {
+        fetch('http://maidoan.pythonanywhere.com/textjson', {
             
             method: "POST",
             headers: {
