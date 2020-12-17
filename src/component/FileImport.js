@@ -22,7 +22,7 @@ class FileImport extends Component{
                             <Form onSubmit={(data)=>{
                                 const file = new FormData();
                                 file.append('file', data.target.file.files[0]);
-                                fetch('http://maidoan.pythonanywhere.com/filejson', {
+                                fetch('https://maidoan.pythonanywhere.com/filejson', {
                                     method: "POST",
                                     body: file
                                 }).then(response => response.json()
