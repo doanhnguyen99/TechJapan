@@ -64,3 +64,16 @@ textarea{
   margin-left: 50px;
   display: flex;
 }
+
+.main-content{
+  margin: 50px 100px;
+}
+
+.main-content p{
+  padding-left: 20px;
+}
+
+.main-content img{
+  height: 400px;
+  width: 80%;
+}
